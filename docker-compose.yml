@@ -1,0 +1,17 @@
+services:
+  asterisk:
+    image: andrius/asterisk
+    container_name: asterisk
+    ports:
+      - "5060:5060/udp"
+      - "5060:5060/tcp"
+      - "10000-20000:10000-20000/udp"
+    networks:
+      tai_network:
+        ipv4_address: 192.168.1.50
+    volumes:
+      - /docker/tai/app/asterisk/config:/etc/asterisk
+
+networks:
+  tai_network:
+    external: true
