@@ -1,0 +1,4 @@
+
+dfd
+#sudo mkdir -p /docker/tai/app/asterisk/config
+#sudo mkdir -p /docker/tai/app/asterisk/data
